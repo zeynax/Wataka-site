@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080610">
+<meta name="description" content="Wataka Minecraft sunucusu. Macerana katıl!">
+<title>WATAKA | Minecraft Sunucusu</title>
+<style>
+:root{--bg:#080610;--panel:#110d1d;--purple:#a855f7;--pink:#e879f9;--text:#f5f0ff;--muted:#aaa1bb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#6b21a833,transparent 55%);z-index:-1}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:#080610eF;border-bottom:1px solid #a855f733;backdrop-filter:blur(15px)}
+nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-size:25px;font-weight:900;letter-spacing:3px;color:#d8b4fe;text-shadow:0 0 20px #a855f7}
+.links{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:#d0c5e3}
+.links a:hover{color:var(--pink)}
+.hero{min-height:570px;padding:100px 22px 85px;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at center,#581c8740,transparent 65%)}
+.hero-inner{max-width:850px}
+.tag{display:inline-block;border:1px solid #a855f766;background:#a855f71c;color:#e9d5ff;padding:7px 14px;border-radius:30px;font-size:12px;letter-spacing:2px;margin-bottom:25px}
+h1{font-size:clamp(54px,11vw,105px);font-weight:1000;letter-spacing:4px;line-height:1.1;background:linear-gradient(100deg,#fff,#c084fc 45%,#e879f9);color:transparent;background-clip:text;filter:drop-shadow(0 0 24px #a855f744)}
+.hero p{color:var(--muted);font-size:17px;margin:22px auto 30px;max-width:560px}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:9px;font-weight:800;font-size:14px;border:1px solid #a855f766;transition:.2s;cursor:pointer}
+.btn.primary{background:linear-gradient(100deg,#7e22ce,#a855f7);color:white;box-shadow:0 0 28px #9333ea40}
+.btn.secondary{background:#ffffff08}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.15)}
+section{max-width:1120px;margin:auto;padding:75px 22px}
+.heading{text-align:center;margin-bottom:36px}
+.heading h2{font-size:clamp(28px,5vw,40px);margin-bottom:8px}
+.heading h2 span{color:#c084fc}
+.heading p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.card{background:linear-gradient(145deg,#171025,#0e0a17);border:1px solid #a855f72a;border-radius:15px;padding:25px;transition:.2s}
+.card:hover{border-color:#a855f777;transform:translateY(-3px)}
+.card .emoji{font-size:29px;margin-bottom:12px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.pill{display:inline-block;margin-top:15px;color:#d8b4fe;background:#a855f71a;border:1px solid #a855f744;border-radius:20px;padding:4px 10px;font-size:11px}
+.banner{border:1px solid #a855f744;border-radius:18px;text-align:center;padding:36px 20px;background:radial-gradient(ellipse at top,#7e22ce30,transparent 75%),#110d1d}
+.banner h2{font-size:28px;margin-bottom:8px}
+.banner p{color:var(--muted);margin-bottom:20px}
+.formbox{max-width:650px;margin:auto;background:#110d1d;border:1px solid #a855f744;border-radius:15px;padding:25px}
+label{display:block;margin:13px 0 6px;font-size:13px;color:#ddd0f3}
+input,select,textarea{width:100%;padding:12px;border:1px solid #453254;border-radius:8px;background:#090711;color:white;font:inherit}
+textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:1px solid #a855f7}
+form button{margin-top:17px;width:100%}
+.notice{font-size:12px;color:var(--muted);margin-top:13px}
+footer{border-top:1px solid #a855f72c;text-align:center;padding:30px 20px;color:var(--muted);font-size:13px}
+footer strong{color:#d8b4fe}
+@media(max-width:720px){nav{align-items:flex-start;flex-direction:column}.links{gap:12px;font-size:12px}.hero{min-height:470px;padding-top:75px}.grid{grid-template-columns:1fr}.card{padding:22px}section{padding:55px 18px}}
+</style>
+</head>
+<body>
+<header><nav>
+<a class="logo" href="#home">WATAKA</a>
+<div class="links">
+<a href="#ozellikler">Özellikler</a>
+<a href="#market">Market</a>
+<a href="#banlar">Ban Listesi</a>
+<a href="#basvuru">Başvurular</a>
+<a href="#ekip">Yetkililer</a>
+<a href="#discord">Discord</a>
+</div>
+</nav></header>
+<main>
+<div class="hero" id="home"><div class="hero-inner">
+<div class="tag">✦ MINECRAFT SUNUCU DENEYİMİ ✦</div>
+<h1>WATAKA</h1>
+<p>Yeni bir macera, yeni dostluklar ve unutulmaz anlar seni bekliyor. Wataka dünyasına hazır mısın?</p>
+<div class="buttons">
+<a class="btn primary" href="#ozellikler">DÜNYAYI KEŞFET ↗</a>
+<a class="btn secondary" href="#discord">DISCORD'A KATIL</a>
+</div>
+</div></div>
+<section id="ozellikler">
+<div class="heading"><h2>WATAKA <span>ÖZELLİKLERİ</span></h2><p>Macera burada başlıyor.</p></div>
+<div class="grid">
+<div class="card"><div class="emoji">⚔️</div><h3>Rekabet</h3><p>Arkadaşlarınla mücadele et, yeteneklerini göster ve kendi hikâyeni yaz.</p></div>
+<div class="card"><div class="emoji">🛡️</div><h3>Adil Oyun</h3><p>Herkes için daha iyi bir oyun ortamı ve topluluk kuralları.</p></div>
+<div class="card"><div class="emoji">🌌</div><h3>Topluluk</h3><p>Yeni oyuncularla tanış, etkinliklere katıl ve topluluğun parçası ol.</p></div>
+</div>
+</section>
+<section id="market">
+<div class="heading"><h2>VIP <span>MARKET</span></h2><p>Destek paketleri ve ayrıcalıklar.</p></div>
+<div class="grid">
+<div class="card"><div class="emoji">💎</div><h3>VIP</h3><p>VIP paketinin açıklaması ve sunulan ayrıcalıklar burada yer alacak.</p><span class="pill">PAKET BİLGİSİ YAKINDA</span></div>
+<div class="card"><div class="emoji">👑</div><h3>VIP+</h3><p>VIP+ paketinin özellikleri ve ayrıcalıkları burada yer alacak.</p><span class="pill">PAKET BİLGİSİ YAKINDA</span></div>
+<div class="card"><div class="emoji">🔥</div><h3>ELITE</h3><p>Üst düzey paketin detaylarını ve fiyatını burada duyuracağız.</p><span class="pill">PAKET BİLGİSİ YAKINDA</span></div>
+</div>
+</section>
+<section id="banlar">
+<div class="banner"><h2>🔨 Banlanan Oyuncular</h2><p>Sunucudaki yasaklamalar burada listelenecek.</p><span class="pill">BAN VERİTABANI HENÜZ BAĞLANMADI</span></div>
+</section>
+<section id="basvuru">
+<div class="heading"><h2>EKİBE <span>KATIL</span></h2><p>Wataka ekibinde yerini almak için başvurunu hazırla.</p></div>
+<div class="formbox">
+<form id="application">
+<label for="nick">Minecraft kullanıcı adın</label><input id="nick" name="nick" required maxlength="40" placeholder="Oyuncu adın">
+<label for="discordname">Discord kullanıcı adın</label><input id="discordname" name="discord" required maxlength="80" placeholder="Discord adın">
+<label for="role">Başvuru türü</label><select id="role" name="role"><option>Yetkili</option><option>Hile Analiz Ekibi</option><option>İçerik Üreticisi</option></select>
+<label for="experience">Deneyimin ve neden katılmak istediğin</label><textarea id="experience" name="experience" required maxlength="1500" placeholder="Kendinden bahset..."></textarea>
+<button class="btn primary" type="submit">BAŞVURU BİLGİLERİNİ HAZIRLA</button>
+<p class="notice" id="formnote">Bu demo form bilgileri otomatik olarak sunucuya göndermez.</p>
+</form>
+</div>
+</section>
+<section id="ekip">
+<div class="heading"><h2>YETKİLİ <span>KADROSU</span></h2><p>Wataka ekibimizle tanış.</p></div>
+<div class="grid">
+<div class="card"><div class="emoji">👑</div><h3>Kurucu</h3><p>Kurucu kadrosu yakında açıklanacak.</p></div>
+<div class="card"><div class="emoji">🛡️</div><h3>Yönetim</h3><p>Yönetim ekibi yakında açıklanacak.</p></div>
+<div class="card"><div class="emoji">⚙️</div><h3>Yetkililer</h3><p>Yetkili kadrosu yakında açıklanacak.</p></div>
+</div>
+</section>
+<section id="discord">
+<div class="banner"><h2>TOPLULUĞA KATIL</h2><p>Duyurular, etkinlikler ve topluluk sohbeti için Discord sunucumuzu ziyaret et.</p><a class="btn primary" href="https://discord.com/" target="_blank" rel="noopener noreferrer">DISCORD'A KATIL ↗</a><p class="notice">Gerçek Discord davet bağlantısı henüz eklenmedi.</p></div>
+</section>
+</main>
+<footer><p><strong>WATAKA</strong> · Minecraft topluluğu</p><p>© 2026 Wataka. Tüm hakları saklıdır.</p></footer>
+<script>
+document.getElementById('application').addEventListener('submit',function(e){
+e.preventDefault();
+const f=new FormData(this);
+const text='Wataka başvuru bilgileri\nMinecraft: '+f.get('nick')+'\nDiscord: '+f.get('discord')+'\nBaşvuru: '+f.get('role')+'\nDeneyim: '+f.get('experience');
+const blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+const url=URL.createObjectURL(blob);
+const a=document.createElement('a');a.href=url;a.download='wataka-basvuru.txt';a.click();URL.revokeObjectURL(url);
+document.getElementById('formnote').textContent='Başvuru dosyası indirildi. Başvurun henüz yetkililere gönderilmedi.';
+});
+</script>
+</body>
+</html>
